@@ -1,5 +1,5 @@
 {
-  "name": "AoU-Website",
+  "name": "aouwebsite",
   "version": "1.0.0",
   "description": "Website for AoU UPHM",
   "main": "server.js",
