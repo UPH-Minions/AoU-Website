@@ -21,7 +21,7 @@ body {
 }
 
 nav {
-    padding: 8px;
+    padding: 2%;
 }
 
 .logo {
@@ -190,10 +190,11 @@ nav ul li a:hover {
 
     .col-2 .test {
         width: 77%;
+
     }
 
     .color-box {
-        transform: translateX(75px);
+        transform: translateX(40px);
     }
 
     .col-1 {
@@ -342,8 +343,8 @@ button:hover {
 }
 
 .col-2 .test {
-    width: 581%;
-    height: 400px;
+    width: 104%;
+    height: 58,5%;
     border-radius: 20px;
 }
 
