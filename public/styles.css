@@ -28,7 +28,7 @@ nav {
     float: left;
     padding: 5px;
     margin-left: 16px;
-    margin-top: -1.5%;
+    margin-top: -1.8%;
     position: absolute;
     width: 24%;
     height: 14%;
@@ -78,7 +78,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 864px) {
     .logo {
-        margin-top: 3px;
+        margin-top: -1%;
         padding: 0px;
         width: 40%;
         height: 10%;
@@ -218,7 +218,7 @@ nav ul li a:hover {
 
 @media (max-width: 991px) {
     .logo {
-        margin-top: 3px;
+        margin-top: -0.5%;
         padding: 0px;
         width: 40%;
         height: 10%;
@@ -356,8 +356,10 @@ button:hover {
 }
 
 .col-2 .test {
-    width: 104%;
-    height: 58,5%;
+    margin-top: -5%;
+    margin-left: 10%; 
+    width: 80%;
+    height: 90%;
     border-radius: 20px;
 }
 
