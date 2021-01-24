@@ -26,14 +26,13 @@ nav {
 
 .logo {
     float: left;
-    padding: 8px;
+    padding: 5px;
     margin-left: 16px;
-    margin-top: 8px;
-}
-
-.image {
-    width: 5%;
-    height: 5%;
+    margin-top: -1.5%;
+    position: absolute;
+    width: 24%;
+    height: 14%;
+    z-index: -1;
 }
 
 .logo a {
@@ -52,6 +51,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     float: left;
+    padding: 10px;
 }
 
 nav ul li:not(:first-child) {
@@ -72,24 +72,27 @@ nav ul li a {
     letter-spacing: 1.2px;
     font-weight: 600;
 }
-
 nav ul li a:hover {
     color: rgba(255, 223, 0, 1);
 }
 
 @media screen and (max-width: 864px) {
     .logo {
-        padding: 0;
+        margin-top: 3px;
+        padding: 0px;
+        width: 40%;
+        height: 10%;
+        position: absolute;
     }
 
     .nav-wrapper {
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 30%;
         height: 100%;
         z-index: -1;
-        background: #000;
+        background: #222222;
         opacity: 0;
         transition: all 0.2s ease;
     }
@@ -110,18 +113,21 @@ nav ul li a:hover {
     }
 
     .nav-wrapper ul li:nth-child(1) a {
-        transition-delay: 0.2s;
+        transition-delay: 0.1s;
     }
 
     .nav-wrapper ul li:nth-child(2) a {
-        transition-delay: 0.3s;
+        transition-delay: 0.2s;
     }
 
     .nav-wrapper ul li:nth-child(3) a {
-        transition-delay: 0.4s;
+        transition-delay: 0.3s;
     }
 
     .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.4s;
+    }
+    .nav-wrapper ul li:nth-child(5) a {
         transition-delay: 0.5s;
     }
 
@@ -211,6 +217,13 @@ nav ul li a:hover {
 }
 
 @media (max-width: 991px) {
+    .logo {
+        margin-top: 3px;
+        padding: 0px;
+        width: 40%;
+        height: 10%;
+        position: absolute;
+    }
     footer {
         padding: 40px;
     }
@@ -501,3 +514,7 @@ footer p {
     text-align: center;
     color: #999;
 }
+
+
+
+    
