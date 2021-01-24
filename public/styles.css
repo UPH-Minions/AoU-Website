@@ -392,6 +392,103 @@ button:hover {
     z-index: -1;
 }
 
+#project{
+    position: relative;
+    margin-top: -190px;
+}
+
+div.col-3{
+    max-width: 800px;
+}
+
+.col3 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    margin-right: -10%;
+    align-items: center;
+}
+
+.col-3 .project {
+    margin-top: -10%;
+    margin-left: auto; 
+    max-width: 90%;
+    height: 108%;
+    width: 65%;
+    border-radius: 20px;
+}
+
+col-4{
+    flex-basis: 10%;
+    position: relative;
+    margin-left: -10px;
+}
+
+.col-4 h2 {
+    text-align: left;
+    color: #ffd700;
+    font-size: 54px;
+    margin: 10px 0;
+}
+
+.col-4 h3 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 100;    
+    margin: 10px 0;
+}
+
+.project-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #95b913; /*gold?*/
+    color: white;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-top: -5%;
+    margin-bottom: -10%;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container h2{
+    text-align: center;
+}
+
+.container p{
+    text-align: justify;
+}
+
+.column-2 {
+    float: left;
+    width: 50%;
+    margin-top: -10%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* .container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+.title {
+    color: grey;
+}
+
 /* FOOTER */
 footer {
     position: relative;
