@@ -82,7 +82,6 @@ nav ul li a:hover {
         height: auto;
         position: absolute;
     }
-
     .nav-wrapper {
         position: fixed;
         top: 0;
@@ -223,7 +222,6 @@ nav ul li a:hover {
     .copyrighText {
         padding: 8px 100px;
     }
-
 }
 
 #nav:checked+.nav-btn {
@@ -263,44 +261,30 @@ nav ul li a:hover {
 
 /* Homepage */
 #Home {
-    background-image: url("Images/Home-01.jpg");
+    background-image: url("Images/Explanation-01.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
     width: auto;
-    height: 85vh;
+    height: auto;
     margin-top: -7%;
     flex-direction: column;
 }
-
+.home .home-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    max-height: auto;
+    margin-top: auto;
+}
 .row {
     padding-top: 7%;
     display: flex;
     justify-content: space-between;
     align-content: center;
     margin: 11% 7%;
-}
-
-.col-1 {
-    flex-basis: 40%;
-    position: relative;
-    margin-left: 50px;
-    z-index: -1;
-}
-
-.col-1 h2 {
-    text-align: left;
-    color: #ffd700;
-    font-size: 54px;
-    margin: 10px 0;
-}
-
-.col-1 h3 {
-    text-align: left;
-    font-size: 30px;
-    font-weight: 100;
-    margin: 10px 0;
 }
 
 button {
@@ -340,45 +324,6 @@ button:hover {
     border: 2px solid #000;
 }
 
-.col-2 {
-    position: relative;
-    flex-basis: 60%;
-    display: flex;
-    margin-left: 20%;
-    align-items: center;
-}
-
-.col-2 .test {
-    margin-top: -5%;
-    margin-left: auto;
-    margin-right: 10%;
-    max-width: 90%;
-    height: auto;
-    border-radius: 20px;
-    z-index: -1;
-}
-
-.col-2 .test {
-    animation-name: spin;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    /* transform: rotate(3deg); */
-    /* transform: rotate(0.3rad);/ */
-    /* transform: rotate(3grad); */
-    /* transform: rotate(.03turn);  */
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 #Explanation {
     background-image: url("Images/Explanation-01.jpg");
     background-position: center;
@@ -393,8 +338,8 @@ button:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 5REM;
-    margin: 0% auto%;
+    font-size: 5rem;
+    margin: 2% auto auto;
 }
 
 .explanation p {
@@ -460,7 +405,7 @@ button:hover {
     -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 5REM;
-    margin: 5% 10% 0%;
+    margin: 2% auto auto;
 }
 
 .main-timeline {
