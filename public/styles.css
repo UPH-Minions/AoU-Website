@@ -16,6 +16,7 @@ body {
     height: 100vh;
     font-weight: 400;
     background: #000;
+    overflow-x: hidden;
 }
 
 nav {
@@ -82,6 +83,7 @@ nav ul li a:hover {
         height: auto;
         position: absolute;
     }
+
     .nav-wrapper {
         position: fixed;
         top: 0;
@@ -265,21 +267,21 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100%;
     width: auto;
     height: auto;
     margin-top: -7%;
     flex-direction: column;
 }
-.home .home-logo{
+
+.home .home-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 60%;
-    max-height: auto;
-    margin-top: auto;
+    height: auto;
 }
-.row {
+
+.row-timeline {
     padding-top: 7%;
     display: flex;
     justify-content: space-between;
@@ -333,18 +335,37 @@ button:hover {
     width: auto;
     height: auto;
 }
+
 .explanation h1 {
     background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 5rem;
+    /* font-size: 4rem; */
     margin: 2% auto auto;
+}
+
+@media screen and (min-width: 601px) {
+    .explanation h1, .training h1 {
+        font-size: 80px;
+    }
+    .explanation p, .iridescent p{
+        font-size: 28px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .explanation h1, .training h1{
+        font-size: 40px;
+    }
+    .explanation p, .iridescent p{
+        font-size: 18px;
+    }
 }
 
 .explanation p {
     padding: 1% 15% 5%;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: center;
     text-justify: inter-word;
     line-height: 2;
@@ -367,19 +388,21 @@ button:hover {
     width: auto;
     height: auto;
 }
-.iridescent .iridescent-logo{
+
+.iridescent .iridescent-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 50%;
     height: auto;
 }
+
 .iridescent p {
     background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 2% 15% 5%;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: center;
     text-justify: inter-word;
     line-height: 2;
@@ -404,7 +427,7 @@ button:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 5REM;
+    /* font-size: 4REM; */
     margin: 2% auto auto;
 }
 
@@ -563,6 +586,7 @@ button:hover {
     color: #fff;
     line-height: 36px;
 }
+
 .main-timeline .year-audition {
     display: block;
     font-size: 36px;
@@ -801,21 +825,23 @@ div.col-3 {
 }
 
 /* FOOTER */
-footer{
+footer {
     background: #111;
     height: auto;
     width: 100vw;
     padding-top: 40px;
     color: #fff;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-.footer-content h3{
+
+.footer-content h3 {
     font-size: 2rem;
     font-weight: 400;
     text-transform: capitalize;
@@ -824,40 +850,46 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* .footer-content p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-style: 14px;
 } */
-.socials{
+.socials {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
-.socials li{
+
+.socials li {
     margin: 0 20px;
 }
-.socials a{
+
+.socials a {
     text-decoration: none;
     color: #fff;
 }
-.socials a i{
+
+.socials a i {
     font-size: 2rem;
     transition: color .4s ease;
 }
-.socials a:hover{
-    font-size: 2rem;      
-	background:-moz-linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%); 
-    background: -webkit-linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%); 
+
+.socials a:hover {
+    font-size: 2rem;
+    background: -moz-linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%);
+    background: -webkit-linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%);
     background: linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-   -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color: transparent;
 }
+
 .copyrighText {
     width: 100%;
     background: #181818;
