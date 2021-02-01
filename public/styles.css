@@ -223,6 +223,7 @@ nav ul li a:hover {
     .copyrighText {
         padding: 8px 100px;
     }
+
 }
 
 #nav:checked+.nav-btn {
@@ -387,19 +388,18 @@ button:hover {
     width: auto;
     height: auto;
 }
-
 .explanation h1 {
     background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 5REM;
-    margin: 0% 10%;
+    margin: 0% auto%;
 }
 
 .explanation p {
     padding: 1% 15% 5%;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     text-justify: inter-word;
     line-height: 2;
@@ -414,7 +414,7 @@ button:hover {
 }
 
 #Iridescent {
-    background-image: url("Images/Iridescent-01-01.jpg");
+    background-image: url("Images/Explanation-01.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -422,13 +422,19 @@ button:hover {
     width: auto;
     height: auto;
 }
-
+.iridescent .iridescent-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+}
 .iridescent p {
     background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 10% 15% 5%;
-    font-size: 24px;
+    padding: 2% 15% 5%;
+    font-size: 1.5rem;
     text-align: center;
     text-justify: inter-word;
     line-height: 2;
