@@ -346,19 +346,27 @@ button:hover {
 }
 
 @media screen and (min-width: 601px) {
-    .explanation h1, .training h1 {
+
+    .explanation h1,
+    .training h1{
         font-size: 80px;
     }
-    .explanation p, .iridescent p{
+
+    .explanation p,
+    .iridescent p{
         font-size: 28px
     }
 }
 
 @media screen and (max-width: 600px) {
-    .explanation h1, .training h1{
+
+    .explanation h1,
+    .training h1{
         font-size: 40px;
     }
-    .explanation p, .iridescent p{
+
+    .explanation p,
+    .iridescent p{
         font-size: 18px;
     }
 }
@@ -824,6 +832,58 @@ div.col-3 {
     color: grey;
 }
 
+/* Registration */
+#Registration {
+    background-image: url("Images/Explanation-01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    margin-top: -7%;
+    flex-direction: column;
+}
+
+.regis-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20%;
+    height: auto;
+}
+.row .regis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h1 {
+    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p {
+    padding: 1% 15% 5%;
+    /* font-size: 1.5rem; */
+    text-align: left;
+    text-justify: inter-word;
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+.regis-desc p span {
+    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* FOOTER */
 footer {
     background: #111;
