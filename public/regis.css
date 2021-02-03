@@ -241,6 +241,14 @@ footer {
         height: auto;
         position: absolute;
     }
+    .container {
+        width: 100%;
+        min-height: auto;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
     .nav-wrapper {
         position: fixed;
         top: 0;
@@ -346,29 +354,22 @@ footer {
         margin: auto 0;
     }
 
-    .col-2 {
+    .col-1 {
         flex-basis: 100%;
         margin-bottom: 50px;
     }
-
-    .col-2 .test {
-        width: 77%;
-
-    }
-
-    .col-1 {
+    .col-2 {
         flex-basis: 100%;
     }
 
-    .col-1 h2 {
+    .col-2 h2 {
         font-size: 35px;
     }
 
-    .col-1 h3 {
+    .col-2 h3 {
         font-size: 15px;
     }
     .logo-regis {
-        margin-top: -30%;
         padding: 0px;
         max-width: 30%;
         height: auto;
