@@ -6,28 +6,37 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
-    font-weight: 400;
+    height: auto;
     background: #000;
-    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* overflow-x: hidden; */
 }
 
-nav {
-    padding-top: 2%;
+.container {
+    width: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#navigationBar {
+    background-color: #000;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     float: left;
     padding: 0;
     margin-left: 16px;
-    margin-top: -2%;
     position: absolute;
     max-width: 15%;
     height: auto;
@@ -40,6 +49,10 @@ nav {
     font-size: 18px;
     letter-spacing: 0px;
     text-decoration: none;
+}
+
+nav {
+    padding-top: 2%;
 }
 
 nav ul {
@@ -63,7 +76,9 @@ nav ul li:last-child {
 nav ul li a {
     display: inline-block;
     outline: none;
-    color: #fff;
+    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
@@ -72,9 +87,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
 }
 
 @media screen and (max-width: 864px) {
@@ -86,6 +99,18 @@ nav ul li a:hover {
         position: absolute;
     }
 
+    .container {
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    video, .home-logo{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
     .nav-wrapper {
         position: fixed;
         top: 0;
@@ -273,16 +298,28 @@ nav ul li a:hover {
     background-size: cover;
     width: auto;
     height: auto;
-    margin-top: -7%;
-    flex-direction: column;
 }
 
-.home .home-logo {
-    display: block;
+.home-logo {
+    display: flex;
+    flex-basis: 100%;
     margin-left: auto;
     margin-right: auto;
     max-width: 60%;
     height: auto;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .row-timeline {
@@ -340,13 +377,22 @@ button:hover {
     height: auto;
 }
 
+.explanation .ambass-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 66%;
+    height: auto;
+}
+
 .explanation h1 {
-    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
+    background: -webkit-linear-gradient(#9F8027 0%, #FDD485 25%, #E4AB4A 50%, #FDD485 75%, #9F8027 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     /* font-size: 4rem; */
-    margin: 2% auto auto;
+    margin: auto;
+    padding: 3% 0 1%;
 }
 
 @media screen and (min-width: 601px) {
@@ -381,8 +427,7 @@ button:hover {
     text-align: center;
     text-justify: inter-word;
     line-height: 2;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .explanation p span {
@@ -399,12 +444,14 @@ button:hover {
     max-width: 100%;
     width: auto;
     height: auto;
+    margin: auto;
 }
 
 .iridescent .iridescent-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
     max-width: 50%;
     height: auto;
 }
@@ -418,8 +465,7 @@ button:hover {
     text-align: center;
     text-justify: inter-word;
     line-height: 2;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     text-transform: uppercase;
 }
 
@@ -432,15 +478,16 @@ button:hover {
     max-width: 100%;
     width: auto;
     height: auto;
+    margin: auto;
 }
 
 .training h1 {
-    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
+    background: -webkit-linear-gradient(#9F8027 0%, #FDD485 25%, #E4AB4A 50%, #FDD485 75%, #9F8027 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     /* font-size: 4REM; */
-    margin: 2% auto auto;
+    margin: auto;
 }
 
 .main-timeline {
@@ -519,7 +566,7 @@ button:hover {
     width: 50%;
     float: left;
     position: relative;
-    margin-top: 6.5%;
+    margin-top: 5.3%;
 }
 
 .main-timeline .date-content:before {
@@ -593,7 +640,7 @@ button:hover {
 
 .main-timeline .year {
     display: block;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
     line-height: 36px;
@@ -601,7 +648,7 @@ button:hover {
 
 .main-timeline .year-audition {
     display: block;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
     line-height: 36px;
@@ -781,72 +828,6 @@ button:hover {
 
 .title {
     color: grey;
-}
-
-/* FOOTER */
-footer {
-    background: #111;
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
-    color: #fff;
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content h3 {
-    font-size: 2rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* .footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-style: 14px;
-} */
-.socials {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-
-.socials li {
-    margin: 0 20px;
-}
-
-.socials a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.socials a i {
-    font-size: 2rem;
-    transition: color .4s ease;
-}
-
-.socials a:hover {
-    font-size: 2rem;
-    background: -moz-linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%);
-    background: -webkit-linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%);
-    background: linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .copyrighText {

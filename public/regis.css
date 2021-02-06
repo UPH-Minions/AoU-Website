@@ -15,7 +15,6 @@ body {
 
 .container {
     width: 100%;
-    min-height: 50vh;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
@@ -66,7 +65,9 @@ nav ul li:last-child {
 nav ul li a {
     display: inline-block;
     outline: none;
-    color: #fff;
+    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
@@ -75,9 +76,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
 }
 
 .logo-regis{
@@ -90,7 +89,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: -20% 0 5%;
+    padding: 4% 0;
 }
 
 .col-2 {
@@ -167,64 +166,6 @@ button:hover {
 .col-1 .logo-regis{
     max-width: 60%;
 }
-/* FOOTER */
-footer {
-    background: #111;
-    height: auto;
-    width: 100%;
-    padding-top: 40px;
-    color: #fff;
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content h3 {
-    font-size: 2rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.socials {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-
-.socials li {
-    margin: 0 20px;
-}
-
-.socials a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.socials a i {
-    font-size: 2rem;
-    transition: color .4s ease;
-}
-
-.socials a:hover {
-    font-size: 2rem;
-    background: -moz-linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%);
-    background: -webkit-linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%);
-    background: linear-gradient(top, #9f8027 0%, #fdd485 50%, #E4AB4A 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .copyrighText {
     max-width: 100%;
@@ -235,7 +176,6 @@ footer {
 }
 @media screen and (max-width: 864px) {
     .logo {
-        margin-top: -1%;
         padding: 0px;
         max-width: 20%;
         height: auto;

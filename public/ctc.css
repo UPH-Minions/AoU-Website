@@ -11,8 +11,8 @@ body {
     background-size: cover;
     height: auto;
     width: 100%;
+    box-sizing: border-box;
 }
-
 .container {
     width: 100%;
     padding-left: 8%;
@@ -77,34 +77,126 @@ nav ul li a {
 nav ul li a:hover {
     transform: scale(1.5);
 }
-.container-projects {
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-    overflow: hidden;
+.contact{
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.row{
-    padding: 3% 0;
+.contact .content{
+    max-width: 800px;
+    text-align: center;
 }
-.ava{
-    max-width: 50%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-.col-lg-6 h1{
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
     background: -webkit-linear-gradient(#9F8027 0%, #FDD485 25%, #E4AB4A 50%, #FDD485 75%, #9F8027 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
-.col-lg-6 p{
+/* .contact .content p{
+    font-weight: 300;
     color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    line-height: 2;
-    text-align: justify;
+} */
+.containerFooter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.containerFooter .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.containerFooter .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.containerFooter .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: -webkit-linear-gradient(#9F8027 0%, #FDD485 25%, #E4AB4A 50%, #FDD485 75%, #9F8027 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.containerFooter .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.containerFooter .contactInfo .box .text h3{
+    font-weight: 500;
+    background: -webkit-linear-gradient(#9F8027 0%, #FDD485 25%, #E4AB4A 50%, #FDD485 75%, #9F8027 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333; 
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    background: -webkit-linear-gradient(#9F8027 0%, #FDD485 25%, #E4AB4A 50%, #FDD485 75%, #9F8027 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
 }
 .copyrighText {
     max-width: 100%;
@@ -115,6 +207,7 @@ nav ul li a:hover {
 }
 @media screen and (max-width: 864px) {
     .logo {
+        margin-top: -1%;
         padding: 0px;
         max-width: 20%;
         height: auto;
@@ -219,7 +312,19 @@ nav ul li a:hover {
     .nav-btn i:nth-child(3) {
         margin-top: 4px;
     }
-
+    .contact{
+        padding: 50px;
+    }
+    .containerFooter{
+        flex-direction: column;
+    }
+    .containerFooter .contactInfo{
+        margin-bottom: 40px;
+    }
+    .containerFooter .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
     .copyrighText {
         padding: 8px 100px;
     }
