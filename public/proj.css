@@ -292,6 +292,7 @@ nav ul li a:hover {
 
 img {
     height: 200px;
+    object-fit: cover;
 }
 
 h3 {
@@ -302,5 +303,41 @@ h3 {
 }
 
 .card-body {
-    background: #fefefe;
+    background: #eaeaea;
+}
+
+.card {
+    background: #222222;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(20px);
+}
+.read-more-container{
+    display: flex;
+    flex-direction: column;
+    color: #111;
+}
+.text-container{
+    padding: 2rem 0;
+    background-color: #eaeaea;
+    border-radius: 2px;
+    line-height: 1.4;
+    box-shadow: 0 0 1rem (rgba(0, 0, 0, 0.1));
+    text-align: justify;
+}
+.read-more-btn{
+    color: #222222;
+    font-weight: 900;
+}
+.read-more-text{
+    display: none;
+}
+.read-more-text--show{
+    display: inline;
 }
