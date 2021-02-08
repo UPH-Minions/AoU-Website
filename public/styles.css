@@ -513,7 +513,7 @@ button:hover {
     position: relative;
 }
 
-.main-timeline .timeline:after {
+.main-timeline .timeline::after {
     content: "";
     display: block;
     clear: both;
@@ -531,8 +531,8 @@ button:hover {
     right: 0;
 }
 
-.main-timeline .icon:before,
-.main-timeline .icon:after {
+.main-timeline .icon::before,
+.main-timeline .icon::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -543,22 +543,22 @@ button:hover {
     transition: all 0.33s ease-out 0s;
 }
 
-.main-timeline .icon:before {
+.main-timeline .icon::before {
     background: #000;
     border: 2px solid #fdd485;
     left: -3px;
 }
 
-.main-timeline .icon:after {
+.main-timeline .icon::after {
     border: 2px solid #e4ab4a;
     left: 3px;
 }
 
-.main-timeline .timeline:hover .icon:before {
+.main-timeline .timeline:hover .icon::before {
     left: 3px;
 }
 
-.main-timeline .timeline:hover .icon:after {
+.main-timeline .timeline:hover .icon::after {
     left: -3px;
 }
 
@@ -569,14 +569,14 @@ button:hover {
     margin-top: 5.3%;
 }
 
-.main-timeline .date-content:before {
+.main-timeline .date-content::before {
     content: "";
     width: 32.5%;
     height: 2px;
     background: -webkit-linear-gradient(#9F8027, #FDD485, #E4AB4A);
     margin: auto 0;
     position: absolute;
-    top: 0;
+    top: 2%;
     right: 10px;
     bottom: 0;
 }
@@ -591,8 +591,8 @@ button:hover {
     z-index: 1;
 }
 
-.main-timeline .date-outer:before,
-.main-timeline .date-outer:after {
+.main-timeline .date-outer::before,
+.main-timeline .date-outer::after {
     content: "";
     width: 175px;
     height: 175px;
@@ -605,22 +605,22 @@ button:hover {
     transition: all 0.33s ease-out 0s;
 }
 
-.main-timeline .date-outer:before {
+.main-timeline .date-outer::before {
     background: #000;
     border: 2px solid #Fdd485;
     left: -6px;
 }
 
-.main-timeline .date-outer:after {
+.main-timeline .date-outer::after {
     border: 2px solid #e4ab4a;
     left: 6px;
 }
 
-.main-timeline .timeline:hover .date-outer:before {
+.main-timeline .timeline:hover .date-outer::before {
     left: 6px;
 }
 
-.main-timeline .timeline:hover .date-outer:after {
+.main-timeline .timeline:hover .date-outer::after {
     left: -6px;
 }
 
@@ -708,7 +708,7 @@ button:hover {
     float: right;
 }
 
-.main-timeline .timeline:nth-child(2n) .date-content:before {
+.main-timeline .timeline:nth-child(2n) .date-content::before {
     left: 10px;
 }
 
@@ -754,7 +754,7 @@ button:hover {
         float: right;
     }
 
-    .main-timeline .date-content:before {
+    .main-timeline .date-content::before {
         display: none;
     }
 
