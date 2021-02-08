@@ -50,9 +50,15 @@
                 <div class="carousel slide carousel-multi-item" data-ride="carousel" id="multi-item-example">
                     <!--Controls-->
                     <div class="controls-top float-end">
-                        <a class="btn btn-outline-secondary prev" data-slide="prev" href="#multi-item-example"><i
-                                class="fa fa-chevron-left"></i></a> <a class="btn btn-outline-secondary next"
-                            data-slide="next" href="#multi-item-example"><i class="fa fa-chevron-right"></i></a>
+                        <a class="btn btn-outline-secondary prev" data-slide="prev" role="button"
+                            href="#multi-item-example">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span></a>
+                        <a class="btn btn-outline-secondary next" data-slide="next" role="button"
+                            href="#multi-item-example">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
                     </div>
                     <!--/.Controls-->
                     <h3 class="d-inline-block mb-3">2020</h3>
@@ -133,56 +139,17 @@
                             </div>
                         </div>
                         <!--/.Second slide-->
-                        <!--Third slide-->
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img alt="Card image cap" class="img-fluid"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card">
-                                        <img alt="Card image cap" class="img-fluid"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card">
-                                        <img alt="Card image cap" class="img-fluid"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Third slide-->
+                        <!--/.Slides-->
+                        <!--Indicators-->
+                        <ol class="carousel-indicators carousel-indicators1">
+                            <li class="active" data-slide-to="0" data-target="#multi-item-example"></li>
+                            <li data-slide-to="1" data-target="#multi-item-example"></li>
+                            <li data-slide-to="2" data-target="#multi-item-example"></li>
+                        </ol>
+                        <!--/.Indicators-->
                     </div>
-                    <!--/.Slides-->
-                    <!--Indicators-->
-                    <ol class="carousel-indicators carousel-indicators1">
-                        <li class="active" data-slide-to="0" data-target="#multi-item-example"></li>
-                        <li data-slide-to="1" data-target="#multi-item-example"></li>
-                        <li data-slide-to="2" data-target="#multi-item-example"></li>
-                    </ol>
-                    <!--/.Indicators-->
+                    <!--/.Carousel Wrapper-->
                 </div>
-                <!--/.Carousel Wrapper-->
             </div>
         </div>
     </div>
