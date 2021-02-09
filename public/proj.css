@@ -95,7 +95,14 @@ nav ul li a:hover {
 .row {
     padding: 3% 0;
 }
-
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: #181818;
+}
 .ava {
     max-width: 50%;
     height: auto;
@@ -117,7 +124,14 @@ nav ul li a:hover {
     line-height: 2;
     text-align: justify;
 }
-
+.description{
+    margin: auto 15% 5%;
+}
+.description p{
+    color: #eaeaea;
+    text-align: justify;
+    font-size: 2rem;
+}
 .copyrighText {
     max-width: 100%;
     background: #181818;
