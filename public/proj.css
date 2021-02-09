@@ -95,14 +95,17 @@ nav ul li a:hover {
 .row {
     padding: 3% 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     cursor: pointer;
     color: #181818;
 }
+
 .ava {
     max-width: 50%;
     height: auto;
@@ -140,6 +143,7 @@ a:hover{
         height: auto;
         position: absolute;
     }
+
     .nav-wrapper {
         position: fixed;
         top: 0;
@@ -305,6 +309,7 @@ a:hover{
     padding-bottom: 3%;
     margin: auto 15%;
 }
+
 img {
     height: 200px;
     object-fit: cover;
@@ -318,11 +323,44 @@ h3 {
 }
 
 .card-body {
-    background: #eaeaea;
+    background: #181818;
+}
+
+.card-title {
+    background: -webkit-linear-gradient(#9F8027 0%, #FDD485 25%, #E4AB4A 50%, #FDD485 75%, #9F8027 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 4%;
+}
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #eaeaea;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    font-size: 1rem;
+    color: $color-black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(#9F8027, #FDD485, #E4AB4A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #000 inset;
+}
+
+button:hover {
+    width: 160px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card {
-    background: #222222;
+    background-color: rgba(0, 0, 0, 0.2);
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -333,12 +371,14 @@ h3 {
 .card:hover {
     transform: translateY(20px);
 }
-.read-more-container{
+
+.read-more-container {
     display: flex;
     flex-direction: column;
     color: #111;
 }
-.text-container{
+
+.text-container {
     padding: 2rem 0;
     background-color: #eaeaea;
     border-radius: 2px;
@@ -346,13 +386,16 @@ h3 {
     box-shadow: 0 0 1rem (rgba(0, 0, 0, 0.1));
     text-align: justify;
 }
-.read-more-btn{
+
+.read-more-btn {
     color: #222222;
     font-weight: 900;
 }
-.read-more-text{
+
+.read-more-text {
     display: none;
 }
-.read-more-text--show{
+
+.read-more-text--show {
     display: inline;
 }
