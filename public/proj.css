@@ -124,14 +124,7 @@ a:hover{
     line-height: 2;
     text-align: justify;
 }
-.description{
-    margin: auto 15% 5%;
-}
-.description p{
-    color: #eaeaea;
-    text-align: justify;
-    font-size: 2rem;
-}
+
 .copyrighText {
     max-width: 100%;
     background: #181818;
