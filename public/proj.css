@@ -322,8 +322,12 @@ h3 {
     text-decoration: none;
 }
 
-.card-body {
-    background: #181818;
+.card-body{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(#9F8027, #FDD485, #E4AB4A);
+    background: #000;
 }
 
 .card-title {
