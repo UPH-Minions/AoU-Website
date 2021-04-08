@@ -557,8 +557,126 @@ button:hover {
     display: table;
 } */
 
+/* Sponsorship */
+.sponsor {
+    background-image: url("Images/Explanation-01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.box-sizing {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15rem 40rem;
+    margin-bottom: 7rem;
+    background-size: cover;
+    background-color: #fff;
+    width: 80%;
+    margin-bottom: 0;
+    position: relative;
+    border-radius: 2rem;
+    /* border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(#9F8027, #FDD485, # h1E4AB4A); */
+}
+@media (max-width: 1200px) {
+    .sponsor h1{
+        font-size: 40px;
+    }
+
+    .box-sizing{
+        width: 1000px;
+    }
+}
+
+.sponsor h1 {
+    background: -webkit-linear-gradient(#9F8027 0%, #FDD485 25%, #E4AB4A 50%, #FDD485 75%, #9F8027 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 4rem;
+    margin: auto;
+    padding: 1% 0 1%;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+}
+
+.line:before,
+.line:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 0.5rem solid;
+    border-radius: 2rem;
+    margin: auto;   
+    color: #000;
+}
+
+.line:before {
+    margin-right: 10px;
+}
+
+.line:after {
+    margin-left: 10px;
+}
+
+.gold_1 {
+    width: 20rem;
+    position: absolute;
+    left: -4%;
+    top: 13%;
+}
+
+.gold_2 {
+    width: 20rem;
+    position: absolute;
+    left: 18%;
+    top: 20%;
+}
+
+.gold_3 {
+    width: 20rem;
+    position: absolute;
+    left: 45%;
+    top: 13%;
+}
+
+.gold_4 {
+    width: 20rem;
+    position: absolute;
+    left: 72%;
+    top: 13%;
+}
+
+.gold_5 {
+    width: 20rem;
+    position: absolute;
+    left: 8%;
+    top: 53%;
+}
+
+.gold_6 {
+    width: 25rem;
+    position: absolute;
+    left: 35%;
+    top: 53%;
+}
+
+.gold_7 {
+    width: 20rem;
+    position: absolute;
+    left: 68%;
+    top: 55%;
+}
+
 .title {
-    color: grey;
+    color: #181818;
 }
 
 .copyrighText {
