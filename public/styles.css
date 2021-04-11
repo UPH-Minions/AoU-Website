@@ -569,7 +569,7 @@ button:hover {
 }
 
 .box-sizing {
-    padding: 10% 0;
+    padding: 7% 0;
     margin-bottom: 4rem;
     background-size: cover;
     border-radius: 2rem;
@@ -589,8 +589,9 @@ button:hover {
     border-width: 5px;
     border-image-source: linear-gradient(#9F8027, #FDD485, # h1E4AB4A); */
 }
+
 @media (max-width: 1200px) {
-    .sponsor h1{
+    .sponsor h1 {
         font-size: 40px;
     }
 }
@@ -616,7 +617,7 @@ button:hover {
     flex: 1 1;
     border-bottom: 0.5rem solid;
     border-radius: 2rem;
-    margin: auto;   
+    margin: auto;
     color: #000;
 }
 
@@ -628,52 +629,56 @@ button:hover {
     margin-left: 10px;
 }
 
+.sponsor_logo {
+    padding: 0 2%;
+}
+
 .gold_1 {
-    width: 15%;
+    width: 20%;
     position: relative;
-    left: 4%;
+    left: 10%;
     top: 5%;
 }
 
 .gold_2 {
-    width: 15%;
+    width: 20%;
     position: relative;
-    left: 4%;
+    left: 8%;
     top: 7%;
 }
 
 .gold_3 {
-    width: 15%;
+    width: 20%;
     position: relative;
-    left: 5%;
+    left: 9%;
     top: 8%;
 }
 
 .gold_4 {
-    width: 15%;
+    width: 20%;
     position: relative;
-    left: 6%;
+    left: 10%;
     top: 6%;
 }
 
 .gold_5 {
-    width: 15%;
+    width: 20%;
     position: relative;
-    left: 6%;
+    left: 20%;
     top: 14%;
 }
 
 .gold_6 {
-    width: 15%;
+    width: 20%;
     position: relative;
-    left: 6%;
+    left: 20%;
     top: 10%;
 }
 
 .gold_7 {
-    width: 15%;
+    width: 20%;
     position: relative;
-    left: 4%;
+    left: 20%;
     top: 10%;
 }
 
